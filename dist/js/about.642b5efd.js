@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunksite_on_vue"]=self["webpackChunksite_on_vue"]||[]).push([[443],{833:function(n,e,u){u.r(e),u.d(e,{default:function(){return l}});var t=u(6252);const s={class:"about"},a=(0,t._)("h1",null,"This is an about page",-1),r=[a];function i(n,e){return(0,t.wg)(),(0,t.iD)("div",s,r)}var c=u(3744);const o={},f=(0,c.Z)(o,[["render",i]]);var l=f}}]);
+//# sourceMappingURL=about.642b5efd.js.map
