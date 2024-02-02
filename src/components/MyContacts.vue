@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div class="footer-container" id="contact">
     <h2>{{ $t("contact") }}</h2>

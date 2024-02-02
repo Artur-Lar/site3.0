@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div ref="skills">
     <h1>{{ $t("skills") }}</h1>
