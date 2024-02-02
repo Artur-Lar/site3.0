@@ -1,8 +1,8 @@
-<template>
+<!-- <template>
   <div class="home">
-    <AboutMe />
-    <SkillSection />
-    <CarouselProjects />
+    <AboutMe ref="aboutMe" />
+    <SkillSection ref="skills" />
+    <CarouselProjects ref="projects" />
   </div>
 </template>
 
@@ -28,4 +28,4 @@ export default {
   margin: auto;
   max-width: 1440px;
 }
-</style>
+</style> -->

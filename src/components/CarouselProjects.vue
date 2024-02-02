@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Мои проекты</h1>
+  <div id="projects" class="projects">
+    <h1>{{ $t("projects") }}</h1>
     <Carousel
       id="MyGallery"
       :items-to-show="1"
@@ -21,7 +21,7 @@
             ></p>
             <template v-if="index !== projects.length - 1">
               <a href="">
-                Ссылка на проект
+                {{ $t("link_to_git") }}
                 <img class="link-img" :src="github_path" alt="git" />
               </a>
             </template>
@@ -73,58 +73,79 @@ export default defineComponent({
       projects: [
         {
           image: img_bookshop,
-          title: "Книжный магазин",
+          title: this.$t("bookshop_title"),
           description:
-            "Главная страница сверстана по макету из Figma\n\n\
-            Подключено Google Books API, чтобы данные загружались с сервера\n\n\
-            Создан автоматический слайдер\n\n\
-            Кнопки авторизации, поиска и корзины неактивны. Однако при добавлении товара в корзину у иконки появляется бейджик с количеством товара в корзине\n\n\
-            При прокрутке сайта шапка остается закреплённой в верхней части экрана.",
+            this.$t("bookshop_text_1") +
+            "\n\n" +
+            this.$t("bookshop_text_2") +
+            "\n\n" +
+            this.$t("bookshop_text_3") +
+            "\n\n" +
+            this.$t("bookshop_text_4") +
+            "\n\n" +
+            this.$t("bookshop_text_5"),
         },
         {
           image: img_kanban,
-          title: "Канбан-доска",
+          title: this.$t("kanban_title"),
           description:
-            "Проект на React с применением роутинга\n\n\
-            Главная страница сверстана по макету из Figma. Канбан-доска имеет 4 блока с задачами: Backlog, Ready, In progress, Finished\n\n\
-            Первоначально каждая задача всегда размещается в Backlog — для анализа\n\n\
-            При клике на кнопку «+ Add card» в карточке Backlog появляется поле ввода в конце списка, между последней задачей и кнопкой. При этом кнопка «+ Add card» меняется на «Submit»\n\n\
-            Осуществлено перемещение задач между списками\n\n\
-            Осуществлена возможность перехода на отдельную страницу какой-либо задачи в списке при клике на её заголовок.",
+            this.$t("kanban_text_1") +
+            "\n\n" +
+            this.$t("kanban_text_2") +
+            "\n\n" +
+            this.$t("kanban_text_3") +
+            "\n\n" +
+            this.$t("kanban_text_4") +
+            "\n\n" +
+            this.$t("kanban_text_5"),
         },
         {
           image: img_scan,
-          title: "Сервис СКАН",
+          title: this.$t("scan_title"),
           description:
-            "Проект на React\n\n\
-            Верстка по макету из Figma\n\n\
-            Компания СКАН разработала новый API для поиска публикаций о компании (юридическом лице) в средствах массовой информации по его ИНН\n\n\
-            Подключение к REST API через GET, POST запросы\n\n\
-            Авторизация пользователя по логину и паролю\n\n\
-            Форма для регистрации проходит валидацию\n\n\
-            Поиск информации осуществляется по ИНН компании\n\n\
-            В отчете выводится информация о периоде и количестве публикаций в СМИ (есть возможность выбора только негативных публикаций).",
+            this.$t("scan_text_1") +
+            "\n\n" +
+            this.$t("scan_text_2") +
+            "\n\n" +
+            this.$t("scan_text_3") +
+            "\n\n" +
+            this.$t("scan_text_4") +
+            "\n\n" +
+            this.$t("scan_text_5") +
+            "\n\n" +
+            this.$t("scan_text_6") +
+            "\n\n" +
+            this.$t("scan_text_7") +
+            "\n\n" +
+            this.$t("scan_text_8"),
         },
         {
           image: img_employeList,
-          title: "Редактируемый список сотрудников",
+          title: this.$t("empList_title"),
           description:
-            "Проект на Vue\n\n\
-            Позволяет создавать, добавлять, редактировать список сотрудников\n\n\
-            При добавлении данных о сотруднике форма проверяет правильность введенных данных (обязательны имя и фамилия, стаж не должен быть больше возраста сотрудника).",
+            this.$t("empList_text_1") +
+            "\n\n" +
+            this.$t("empList_text_2") +
+            "\n\n" +
+            this.$t("empList_text_3"),
         },
         {
           image: img_skyline,
-          title:
-            "Коммерческая разработка - сервис по покупке и продаже криптовалюты SkyLine",
+          title: this.$t("skyline_title"),
           description:
-            "Проект на React\n\n\
-            Верстка по макету Figma с использованием Material UI\n\n\
-            Резиновая и адаптивная верстка\n\n\
-            Контролируемые формы\n\n\
-            Кастомизированные хуки\n\n\
-            Создание запросов GET, POST на сервер REST API\n\n\
-            Проверка заполнения формы для регистрации и авторизации.",
+            this.$t("skyline_text_1") +
+            "\n\n" +
+            this.$t("skyline_text_2") +
+            "\n\n" +
+            this.$t("skyline_text_3") +
+            "\n\n" +
+            this.$t("skyline_text_4") +
+            "\n\n" +
+            this.$t("skyline_text_5") +
+            "\n\n" +
+            this.$t("skyline_text_6") +
+            "\n\n" +
+            this.$t("skyline_text_7"),
         },
       ],
     };
@@ -157,6 +178,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+.projects {
+  margin-bottom: 50px;
+}
 .carousel__main_item {
   position: relative;
   width: 100%;

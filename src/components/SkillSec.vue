@@ -1,83 +1,78 @@
 <template>
-  <div>
-    <h1>Мои навыки</h1>
-    <div class="skills-container">
+  <div ref="skills">
+    <h1>{{ $t("skills") }}</h1>
+    <div class="skills-container" id="skills">
       <div class="one-skill">
         <img class="skill-icon" :src="html_path" alt="html_path" />
         <div class="skill-description">
-          <p>Работа с формами и элементами ввода</p>
-          <p>Создание таблиц и списков</p>
-          <p>
-            Верстка сайтов по макетам из Figma: семантическая, адаптивная,
-            кроссбраузерная.
-          </p>
+          <p>{{ $t("skill_html_1") }}</p>
+          <p>{{ $t("skill_html_2") }}</p>
+          <p>{{ $t("skill_html_3") }}</p>
         </div>
       </div>
       <div class="one-skill">
         <img class="skill-icon" :src="css_path" alt="css_path" />
         <img class="skill-icon" :src="scss_path" alt="scss_path" />
         <div class="skill-description">
-          <p>Работа с Адаптивным Дизайном</p>
-          <p>CSS-Анимации и Трансформации</p>
-          <p>Flexbox и Grid Layout</p>
-          <p>БЭМ-Методология</p>
+          <p>{{ $t("skill_css_1") }}</p>
+          <p>{{ $t("skill_css_2") }}</p>
+          <p>{{ $t("skill_css_3") }}</p>
+          <p>{{ $t("skill_css_4") }}</p>
         </div>
       </div>
       <div class="one-skill">
         <img class="skill-icon" :src="js_path" alt="js_path" />
         <div class="skill-description">
-          <p>Обработка событий и асинхронное программирование</p>
-          <p>DOM и Манипуляция Элементами</p>
-          <p>AJAX и HTTP Запросы</p>
-          <p>Работа с API и интеграция сторонних сервисов</p>
+          <p>{{ $t("skill_js_1") }}</p>
+          <p>{{ $t("skill_js_2") }}</p>
+          <p>{{ $t("skill_js_3") }}</p>
+          <p>{{ $t("skill_js_4") }}</p>
         </div>
       </div>
       <div class="one-skill">
         <img class="skill-icon" :src="ts_path" alt="ts_path" />
         <div class="skill-description">
-          <p>TypeScript и ООП</p>
-          <p>Статическая типизация и интерфейсы</p>
-          <p>Работа с TypeScript в современных фреймворках</p>
+          <p>{{ $t("skill_ts_1") }}</p>
+          <p>{{ $t("skill_ts_2") }}</p>
+          <p>{{ $t("skill_ts_3") }}</p>
         </div>
       </div>
       <div class="one-skill">
         <img class="skill-icon" :src="react_path" alt="react_path" />
         <div class="skill-description">
-          <p>Работа с компонентами и жизненным циклом</p>
-          <p>Управление состоянием с Redux</p>
-          <p>Роутинг и навигация с помощью библиотеки React router</p>
-          <p>
-            Взаимодействие с API и асинхронные запросы (библиотека Axios, fetch)
-          </p>
+          <p>{{ $t("skill_react_1") }}</p>
+          <p>{{ $t("skill_react_2") }}</p>
+          <p>{{ $t("skill_react_3") }}</p>
+          <p>{{ $t("skill_react_4") }}</p>
         </div>
       </div>
       <div class="one-skill">
         <img class="skill-icon" :src="vue_path" alt="vue_path" />
         <div class="skill-description">
-          <p>Работа с компонентами и опции компонента</p>
-          <p>Управление Состоянием с Vuex</p>
-          <p>Маршрутизация с Vue Router</p>
-          <p>Взаимодействие с API</p>
+          <p>{{ $t("skill_vue_1") }}</p>
+          <p>{{ $t("skill_vue_2") }}</p>
+          <p>{{ $t("skill_vue_3") }}</p>
+          <p>{{ $t("skill_vue_4") }}</p>
         </div>
       </div>
       <div class="one-skill">
         <img class="skill-icon" :src="mui_path" alt="mui_path" />
         <div class="skill-description">
-          <p>Темизация и кастомизация комопнентов</p>
-          <p>Адаптивный дизайн и отзывчивость</p>
+          <p>{{ $t("skill_mui_1") }}</p>
+          <p>{{ $t("skill_mui_2") }}</p>
         </div>
       </div>
       <div class="one-skill">
         <img class="skill-icon" :src="git_path" alt="git_path" />
         <div class="skill-description">
-          <p>Опыт работы с Git Flow</p>
-          <p>Работа с репозиториями</p>
+          <p>{{ $t("skill_git_1") }}</p>
+          <p>{{ $t("skill_git_2") }}</p>
         </div>
       </div>
       <div class="one-skill">
         <img class="skill-icon" :src="jira_path" alt="jira_path" />
         <div class="skill-description">
-          <p>Создание и управление задачами</p>
+          <p>{{ $t("skill_jira_1") }}</p>
         </div>
       </div>
     </div>
