@@ -1,18 +1,19 @@
 <template>
-  <div>
-    <h1 class="title-in-section title-about-me" id="aboutMe_title">
-      Привет! Меня зовут Артур
+  <div class="aboutMe" id="aboutMe" ref="aboutMe">
+    <h1>
+      {{ $t("aboutMe_title") }}
     </h1>
-    <h2 id="aboutMe_miniTitle">Я - фронтенд-разработчик</h2>
-    <div class="text-in-section" id="aboutMe_text">
-      Привет! Меня зовут Артур, я фронтенд разработчик с опытом работы в
-      создании современных и отзывчивых веб-приложений. Стремлюсь создавать
-      веб-приложения, которые предоставляют отличный пользовательский опыт. Умею
-      переводить дизайнерские концепции в эффективный и красочный код. Опыт
-      работы с различными фреймворками, такими как React и Vue, позволяет мне
-      быстро адаптироваться к новым технологиям
+    <h2>{{ $t("aboutMe_miniTitle") }}</h2>
+    <div>
+      {{ $t("aboutMe_text") }}
     </div>
   </div>
 </template>
 
 <script></script>
+
+<style>
+.aboutMe {
+  margin-top: 150px;
+}
+</style>

@@ -1,8 +1,8 @@
 <template>
-  <div class="footer-container">
-    <h2>Мои контакты</h2>
+  <div class="footer-container" id="contact">
+    <h2>{{ $t("contact") }}</h2>
     <a class="link" href="https://t.me/arturdr45" target="_blank" id="tgProfile"
-      ><img :src="icon_telegram_path" alt="" /> Мой профиль в Телеграм</a
+      ><img :src="icon_telegram_path" alt="" /> {{ $t("tgProfile") }}</a
     >
     <a
       class="link"
@@ -24,7 +24,7 @@
           fill="rgb(254, 254, 254)"
         />
       </svg>
-      Профиль на Headhunter</a
+      {{ $t("hhProfile") }}</a
     >
   </div>
 </template>
@@ -46,6 +46,7 @@ export default {
   width: 70%;
   margin: auto;
   max-width: 1440px;
+  padding: 100px 0 100px 0;
 }
 .link {
   text-decoration: none;
