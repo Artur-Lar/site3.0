@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div class="aboutMe" id="aboutMe" ref="aboutMe">
     <h1>

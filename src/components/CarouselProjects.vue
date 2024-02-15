@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div id="projects" class="projects">
     <h1>{{ $t("projects") }}</h1>
@@ -20,7 +21,11 @@
               v-html="formatDescription(project.description)"
             ></p>
             <template v-if="index !== projects.length - 1">
-              <a href="">
+              <a
+                href="project.githubUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {{ $t("link_to_git") }}
                 <img class="link-img" :src="github_path" alt="git" />
               </a>
@@ -84,6 +89,7 @@ export default defineComponent({
             this.$t("bookshop_text_4") +
             "\n\n" +
             this.$t("bookshop_text_5"),
+          githubUrl: "https://github.com/Artur-Lar/Bookshop-fin",
         },
         {
           image: img_kanban,
@@ -98,6 +104,7 @@ export default defineComponent({
             this.$t("kanban_text_4") +
             "\n\n" +
             this.$t("kanban_text_5"),
+          githubUrl: "https://github.com/Artur-Lar/kanban-board",
         },
         {
           image: img_scan,
@@ -118,6 +125,7 @@ export default defineComponent({
             this.$t("scan_text_7") +
             "\n\n" +
             this.$t("scan_text_8"),
+          githubUrl: "https://github.com/Artur-Lar/scan",
         },
         {
           image: img_employeList,
@@ -128,6 +136,7 @@ export default defineComponent({
             this.$t("empList_text_2") +
             "\n\n" +
             this.$t("empList_text_3"),
+          githubUrl: "https://github.com/Artur-Lar/tets-task-on-vue",
         },
         {
           image: img_skyline,
